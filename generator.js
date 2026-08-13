@@ -822,13 +822,13 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.shadowColor = cyan;
         ctx.shadowBlur = 10;
         ctx.fillStyle = '#ffffff';
-        ctx.font = `900 ${1.55 * scale}px Orbitron`;
+        ctx.font = `900 ${24.8 * scale}px Orbitron`;
         ctx.textAlign = 'center';
         ctx.fillText("HACKER HOUSE", 500, 50 * scale);
         ctx.fillStyle = pink;
         ctx.shadowColor = pink;
         ctx.shadowBlur = 5;
-        ctx.font = `bold ${0.95 * scale}px 'Lilita One'`;
+        ctx.font = `bold ${15.2 * scale}px 'Lilita One'`;
         ctx.fillText("GOA 2026", 500, 72 * scale);
         ctx.shadowBlur = 0;
 
