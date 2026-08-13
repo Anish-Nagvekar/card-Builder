@@ -687,11 +687,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Header
         ctx.fillStyle = green;
-        ctx.font = `900 ${2.1 * scale}px 'Lilita One'`;
+        ctx.font = `900 ${24.8 * scale}px Orbitron`;
         ctx.textAlign = 'center';
         ctx.fillText("HACKER HOUSE", 500, 95 * scale);
         ctx.fillStyle = red;
-        ctx.font = `bold ${0.95 * scale}px 'Lilita One'`;
+        ctx.font = `bold ${15.2 * scale}px 'Lilita One'`;
         ctx.fillText("GOA 2026", 500, 115 * scale);
 
         // Wooden Pole
