@@ -1906,3 +1906,23 @@ label {
         text-align: center;
     }
 }
+
+/* --- THEME VISIBILITY FIXES --- */
+
+/* Hide Retro Elements when Neon Theme is active */
+.card-preview.theme-neon .retro-top-ribbon,
+.card-preview.theme-neon .card-top-stamp-content,
+.card-preview.theme-neon .retro-postmark-stamp,
+.card-preview.theme-neon .retro-slogan-bubble,
+.card-preview.theme-neon .retro-house-svg,
+.card-preview.theme-neon .retro-scooter-svg {
+    display: none;
+}
+
+/* Hide specific Retro Elements when Mix Theme is active */
+.card-preview.theme-mix .retro-top-ribbon,
+.card-preview.theme-mix .card-top-stamp-content,
+.card-preview.theme-mix .retro-postmark-stamp,
+.card-preview.theme-mix .retro-slogan-bubble {
+    display: none;
+}
