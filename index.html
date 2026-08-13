@@ -117,7 +117,7 @@
                             <label for="input-name">Full Name</label>
                             <div class="input-wrapper">
                                 <i class="fa-solid fa-user"></i>
-                                <input type="text" id="input-name" placeholder="Madhavan Singh" maxlength="22" required>
+                                <input type="text" id="input-name" placeholder="Enter your full name" maxlength="22" required>
                             </div>
                         </div>
 
@@ -127,7 +127,7 @@
                                 <label for="input-age">Age</label>
                                 <div class="input-wrapper">
                                     <i class="fa-solid fa-hourglass-half"></i>
-                                    <input type="number" id="input-age" placeholder="24" min="16" max="100">
+                                    <input type="number" id="input-age" placeholder="Age" min="16" max="100">
                                 </div>
                             </div>
                             
@@ -135,7 +135,8 @@
                                 <label for="input-profession">Profession / Role</label>
                                 <div class="input-wrapper">
                                     <i class="fa-solid fa-briefcase"></i>
-                                    <select id="input-profession">
+                                    <select id="input-profession" class="role-select">
+                                        <option value="" disabled selected>Select your role...</option>
                                         <option value="FULL STACK DEVELOPER">Full Stack Developer</option>
                                         <option value="FRONTEND DEVELOPER">Frontend Developer</option>
                                         <option value="BACKEND DEVELOPER">Backend Developer</option>
@@ -381,8 +382,8 @@
                             <!-- Bottom Nameplate Card -->
                             <div class="card-bottom-nameplate">
                                 <div class="nameplate-inner">
-                                    <h3 class="card-user-name" id="card-display-name">MADHAVAN SINGH</h3>
-                                    <p class="card-user-profession" id="card-display-profession">FULL STACK DEVELOPER</p>
+                                    <h3 class="card-user-name" id="card-display-name">YOUR NAME HERE</h3>
+                                    <p class="card-user-profession" id="card-display-profession">SELECT ROLE</p>
                                 </div>
                             </div>
 
@@ -429,6 +430,6 @@
     <canvas id="render-canvas" style="display: none;"></canvas>
 
     <!-- Scripts -->
-    <script src="js/generator.js"></script>
+    <script src="generator.js"></script>
 </body>
 </html>
