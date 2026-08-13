@@ -540,7 +540,7 @@ section {
     }
     
     .preview-panel {
-        order: -1; /* Show preview on top on tablet/mobile */
+        order: -1; 
     }
 }
 
@@ -641,6 +641,21 @@ label {
     transition: all 0.3s ease;
 }
 
+/* Dropdown color change handler states */
+.input-wrapper select option {
+    background-color: #0b0d19;
+    color: #fff;
+}
+
+.input-wrapper select.has-value {
+    color: var(--neon-cyan);
+    font-weight: 600;
+}
+
+.input-wrapper select option[value=""][disabled] {
+    color: var(--color-text-muted);
+}
+
 .input-wrapper select {
     appearance: none;
     -webkit-appearance: none;
@@ -648,7 +663,6 @@ label {
 }
 
 .input-wrapper::after {
-    /* dropdown arrow icon */
     content: '\f107';
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
@@ -660,7 +674,6 @@ label {
     pointer-events: none;
 }
 
-/* Hide arrow for input type number & text */
 .input-wrapper:not(:has(select))::after {
     display: none;
 }
@@ -922,7 +935,7 @@ label {
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* --- THEME 1: MODERN NEON (left mockup styling) --- */
+/* --- THEME 1: MODERN NEON --- */
 .card-preview.theme-neon {
     background-color: #0b0d19;
     border: 3px solid var(--neon-pink);
@@ -941,7 +954,6 @@ label {
     z-index: 1;
 }
 
-/* Inner borders and layout details for neon */
 .card-preview.theme-neon::before {
     content: '';
     position: absolute;
@@ -953,7 +965,6 @@ label {
     box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.1);
 }
 
-/* Top left circular stamp */
 .card-top-stamp {
     position: absolute;
     top: 22px;
@@ -972,7 +983,6 @@ label {
     to { transform: rotate(360deg); }
 }
 
-/* Top Right ornament */
 .card-top-right-decor {
     position: absolute;
     top: 22px;
@@ -985,7 +995,6 @@ label {
     filter: drop-shadow(0 0 5px var(--neon-cyan));
 }
 
-/* Card Header Brand */
 .card-header-brand {
     text-align: center;
     padding-top: 25px;
@@ -1013,7 +1022,6 @@ label {
     text-shadow: 0 0 8px var(--neon-cyan);
 }
 
-/* Grid alignment in body */
 .card-body-grid {
     display: grid;
     grid-template-columns: 80px 1fr 80px;
@@ -1026,7 +1034,6 @@ label {
     z-index: 5;
 }
 
-/* Left badges list */
 .card-left-badges {
     display: flex;
     flex-direction: column;
@@ -1075,7 +1082,6 @@ label {
     letter-spacing: 0.5px;
 }
 
-/* Right vertical text */
 .card-right-slogan {
     display: flex;
     justify-content: center;
@@ -1095,7 +1101,6 @@ label {
     text-shadow: 0 0 8px rgba(255, 0, 127, 0.6);
 }
 
-/* Center crop circle */
 .card-center-profile {
     display: flex;
     justify-content: center;
@@ -1129,7 +1134,7 @@ label {
 
 .profile-image-draggable img {
     position: absolute;
-    pointer-events: none; /* Let drag events hit the parent container */
+    pointer-events: none; 
 }
 
 .profile-placeholder {
@@ -1155,7 +1160,6 @@ label {
     text-transform: uppercase;
 }
 
-/* Nameplate box bottom */
 .card-bottom-nameplate {
     position: absolute;
     bottom: 50px;
@@ -1203,7 +1207,6 @@ label {
     text-overflow: ellipsis;
 }
 
-/* Card footer details */
 .card-footer {
     position: absolute;
     bottom: 12px;
@@ -1248,7 +1251,7 @@ label {
 }
 
 
-/* --- THEME 2: TROPICAL RETRO (right mockup styling) --- */
+/* --- THEME 2: TROPICAL RETRO --- */
 .card-preview.theme-retro {
     background-color: var(--retro-cream);
     border: 12px solid var(--retro-green);
@@ -1260,7 +1263,6 @@ label {
     display: none;
 }
 
-/* Retro Stamp (Postmark style) top left */
 .card-preview.theme-retro .card-top-stamp {
     position: absolute;
     top: 15px;
@@ -1279,7 +1281,6 @@ label {
 }
 
 .card-preview.theme-retro .card-top-stamp::after {
-    /* Custom inner stamp frame */
     content: '';
     position: absolute;
     top: 2px; left: 2px; right: 2px; bottom: 2px;
@@ -1288,7 +1289,6 @@ label {
     pointer-events: none;
 }
 
-/* Custom mini drawing for retro stamp */
 .card-preview.theme-retro .neon-circular-stamp {
     display: none;
 }
@@ -1320,7 +1320,6 @@ label {
     text-transform: uppercase;
 }
 
-/* Top Right Postmark Stamp for retro */
 .card-preview.theme-retro .card-top-right-decor {
     position: absolute;
     top: 15px;
@@ -1348,7 +1347,6 @@ label {
     animation: rotateStamp 40s linear infinite;
 }
 
-/* Ribbon badge flag top center */
 .card-preview.theme-retro .retro-top-ribbon {
     position: absolute;
     top: -1px;
@@ -1380,7 +1378,6 @@ label {
     letter-spacing: 0.5px;
 }
 
-/* Retro Header Brand */
 .card-preview.theme-retro .card-header-brand {
     padding-top: 45px;
 }
@@ -1404,13 +1401,11 @@ label {
     margin-top: 1px;
 }
 
-/* Body structure for Retro */
 .card-preview.theme-retro .card-body-grid {
     top: 130px;
     bottom: 110px;
 }
 
-/* Retro wooden directional signs on the left */
 .card-preview.theme-retro .card-left-badges {
     display: flex;
     flex-direction: column;
@@ -1421,7 +1416,6 @@ label {
 }
 
 .card-preview.theme-retro .card-left-badges::before {
-    /* The brown signpost pole */
     content: '';
     position: absolute;
     top: -15px;
@@ -1444,7 +1438,7 @@ label {
 }
 
 .card-preview.theme-retro .badge-icon {
-    display: none; /* Hide icons on signs */
+    display: none; 
 }
 
 .card-preview.theme-retro .badge-text {
@@ -1461,24 +1455,22 @@ label {
     letter-spacing: 0.5px;
 }
 
-/* Yellow board */
 .card-preview.theme-retro .badge-build .badge-text {
     background: var(--retro-yellow);
     clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
     color: var(--retro-green);
 }
-/* Red board */
+
 .card-preview.theme-retro .badge-ship .badge-text {
     background: var(--retro-red);
     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
 }
-/* Green board */
+
 .card-preview.theme-retro .badge-repeat .badge-text {
     background: var(--retro-sage);
     clip-path: polygon(0% 0%, 95% 0%, 95% 100%, 0% 100%);
 }
 
-/* Retro Right bubble speech and villa graphics */
 .card-preview.theme-retro .card-right-slogan {
     display: flex;
     flex-direction: column;
@@ -1489,7 +1481,7 @@ label {
 }
 
 .card-preview.theme-retro .vertical-text {
-    display: none; /* Hide vertical text */
+    display: none; 
 }
 
 .card-preview.theme-retro .retro-slogan-bubble {
@@ -1509,7 +1501,6 @@ label {
 }
 
 .card-preview.theme-retro .retro-slogan-bubble::after {
-    /* Speech bubble arrow */
     content: '';
     position: absolute;
     bottom: -8px;
@@ -1520,7 +1511,6 @@ label {
     border-top: 8px solid var(--retro-green);
 }
 
-/* Retro Vespa Scooter and Villa Graphics */
 .card-preview.theme-retro .retro-illustration-box {
     width: 75px;
     height: 110px;
@@ -1549,7 +1539,6 @@ label {
     filter: drop-shadow(0 2px 3px rgba(0,0,0,0.15));
 }
 
-/* Dashed Retro Circle Frame */
 .card-preview.theme-retro .profile-crop-circle {
     width: 170px;
     height: 170px;
@@ -1558,7 +1547,6 @@ label {
     background: #e9e3ce;
 }
 
-/* Retro bottom nameplate */
 .card-preview.theme-retro .card-bottom-nameplate {
     background: var(--retro-green);
     border: none;
@@ -1581,7 +1569,6 @@ label {
     margin-top: 1px;
 }
 
-/* Retro Footer elements */
 .card-preview.theme-retro .card-footer {
     font-family: var(--font-retro);
     color: var(--retro-green);
@@ -1617,7 +1604,6 @@ label {
     z-index: 1;
 }
 
-/* Mix circular stamp top left */
 .card-preview.theme-mix .card-top-stamp {
     position: absolute;
     top: 22px;
@@ -1630,7 +1616,6 @@ label {
     filter: drop-shadow(0 0 5px var(--neon-green));
 }
 
-/* Top right palm tree decor */
 .card-preview.theme-mix .card-top-right-decor {
     position: absolute;
     top: 22px;
@@ -1643,7 +1628,6 @@ label {
     filter: drop-shadow(0 0 5px var(--neon-cyan));
 }
 
-/* Brand header */
 .card-preview.theme-mix .card-header-brand {
     padding-top: 25px;
 }
@@ -1664,13 +1648,11 @@ label {
     text-shadow: 0 0 6px rgba(255, 0, 127, 0.6);
 }
 
-/* Body layout */
 .card-preview.theme-mix .card-body-grid {
     top: 105px;
     bottom: 120px;
 }
 
-/* Left neon wooden signs mix! */
 .card-preview.theme-mix .card-left-badges {
     display: flex;
     flex-direction: column;
@@ -1745,7 +1727,6 @@ label {
     font-weight: 700;
 }
 
-/* Right mix illustrations (glowing outline house + scooter) */
 .card-preview.theme-mix .card-right-slogan {
     display: flex;
     flex-direction: column;
@@ -1794,7 +1775,6 @@ label {
     filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.7));
 }
 
-/* Double glowing crop frame */
 .card-preview.theme-mix .profile-crop-circle {
     width: 172px;
     height: 172px;
@@ -1803,7 +1783,6 @@ label {
     background: #11091e;
 }
 
-/* Glassmorphic Nameplate */
 .card-preview.theme-mix .card-bottom-nameplate {
     background: rgba(18, 5, 32, 0.65);
     border: 1.5px solid rgba(0, 240, 255, 0.5);
@@ -1830,7 +1809,6 @@ label {
     text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);
 }
 
-/* Mix Footer details */
 .card-preview.theme-mix .card-footer {
     font-family: var(--font-neon);
     color: var(--neon-cyan);
